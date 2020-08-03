@@ -1,0 +1,168 @@
+body{
+    font-family: 'Philosopher', sans-serif;
+}
+
+/*#######################################################*ICONS*##################################################################*/
+
+/*Icons*/
+
+
+.info{
+    background:#DCBF85;
+}
+
+.green{
+    color:#00CC70;
+}
+
+.primary-color{
+    color:#EF2917;
+}
+
+.info a{
+    transition: color 0.5s ease-in-out;
+    color:#137547;
+}
+
+.info a:hover{
+    color:#68543C;
+}
+
+/*######################################################*HEADER*#############################################################*/
+
+#header{
+    min-height:calc(100vh - 94px);
+    background: url(img/11.jpg)center/cover fixed no-repeat;
+}
+
+.height-90{
+    min-height:calc(100vh - 94px);
+}
+
+
+.banner h1{
+    background:transparent;
+    border-top:6px dotted white;
+    border-bottom:6px dotted white;
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft{
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    50% {
+         transform: translateX(-30px);
+    }
+
+    100% {
+          transform: translateX(0px);
+          opacity: 1;
+    }
+
+}
+
+
+.main-btn{
+    background:#A4031F;
+    color:#FF7F11;
+    font-size:2rem;
+    border: 2px solid #FF7F11;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.main-btn:hover{
+    background:#FF7F11;
+    color:#A4031F;
+}
+
+.order-btn{
+    animation: fromRight;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromRight{
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    50% {
+         transform: translateX(-30px);
+    }
+
+    100% {
+          transform: translateX(0px);
+          opacity: 1;
+    }
+
+}
+
+
+
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: white;
+    color:#00CC70;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    animation: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes fromBottom{
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+         transform: translateY(10px);
+    }
+
+    100% {
+          transform: translateY(-10px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
